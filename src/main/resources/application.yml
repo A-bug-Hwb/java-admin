@@ -1,0 +1,28 @@
+wr-config:
+  profile: ./uploadPath
+  # 验证码类型 math 数组计算 char 字符验证
+  captchaType: math
+server:
+  port: 7076
+spring:
+  #Knife4j配置
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  profiles:
+    active: dev
+#日志配置
+logging:
+  file:
+    name: logs/logs
+  level:
+    com.wr: debug
+
+# token配置
+token:
+  # 令牌自定义标识
+  header: Authorization
+  # 令牌密钥
+  secret: githubabughwbwrblog
+  # 令牌有效期（默认30分钟）
+  expireTime: 240
