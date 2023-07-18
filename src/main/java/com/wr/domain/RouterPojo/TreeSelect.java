@@ -10,7 +10,7 @@ import lombok.Data;
 /**
  * Treeselect树结构实体类
  *
- * @author ruoyi
+ * @author wr
  */
 @Data
 public class TreeSelect implements Serializable

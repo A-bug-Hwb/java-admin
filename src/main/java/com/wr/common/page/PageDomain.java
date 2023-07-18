@@ -3,7 +3,7 @@ package com.wr.common.page;
 /**
  * 分页数据
  *
- * @author ruoyi
+ * @author wr
  */
 public class PageDomain
 {

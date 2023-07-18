@@ -20,7 +20,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 /**
  * 客户端工具类
  *
- * @author ruoyi
+ * @author wr
  */
 public class ServletUtils
 {

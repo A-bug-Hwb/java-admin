@@ -19,7 +19,7 @@ import com.alibaba.fastjson2.JSON;
 /**
  * 自定义退出处理类 返回成功
  *
- * @author ruoyi
+ * @author wr
  */
 @Configuration
 public class LogoutSuccessHandlerImpl implements LogoutSuccessHandler

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * 服务相关配置
  *
- * @author ruoyi
+ * @author wr
  */
 @Component
 public class ServerConfig

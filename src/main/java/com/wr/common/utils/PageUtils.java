@@ -7,7 +7,7 @@ import com.wr.common.page.TableSupport;
 /**
  * 分页工具类
  *
- * @author ruoyi
+ * @author wr
  */
 public class PageUtils extends PageHelper
 {
