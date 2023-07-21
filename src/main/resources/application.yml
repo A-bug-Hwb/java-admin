@@ -25,4 +25,4 @@ token:
   # 令牌密钥
   secret: githubabughwbwrblog
   # 令牌有效期（默认30分钟）
-  expireTime: 240
+  expireTime: 30

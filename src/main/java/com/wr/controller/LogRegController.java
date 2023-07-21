@@ -4,17 +4,13 @@ import com.wf.captcha.ArithmeticCaptcha;
 import com.wf.captcha.SpecCaptcha;
 import com.wr.common.RedisCache;
 import com.wr.common.Result.AjaxResult;
-import com.wr.common.annotate.LogStorage;
 import com.wr.common.constants.CacheConstants;
 import com.wr.common.constants.Constants;
 import com.wr.common.utils.IdUtils;
-import com.wr.common.utils.SecurityUtils;
 import com.wr.domain.LogRegPojo.RegisterUser;
 import com.wr.domain.LogRegPojo.LoginUserVo;
-import com.wr.domain.SysMenuPojo.SysMenuVo;
 import com.wr.service.ILogRegService;
 import com.wr.service.ISysConfigService;
-import com.wr.service.ISysMenuService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,8 +19,6 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 @RestController
@@ -51,7 +45,6 @@ public class LogRegController extends BaseController {
         return AjaxResult.success("获取成功",token);
     }
 
-    @LogStorage
     @PostMapping("/register")
     @ApiOperation("用户注册")
     @PreAuthorize("@ac.hasPermi('system:user:list')")

@@ -2,16 +2,13 @@ package com.wr.controller;
 
 import com.wr.common.Result.AjaxResult;
 import com.wr.common.page.TableDataInfo;
-import com.wr.common.utils.BeanUtil;
 import com.wr.domain.SysConfigPojo.AddSysConfigDto;
 import com.wr.domain.SysConfigPojo.SysConfigDto;
-import com.wr.domain.SysConfigPojo.SysConfigVo;
 import com.wr.domain.SysConfigPojo.UpSysConfigDto;
 import com.wr.service.ISysConfigService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
