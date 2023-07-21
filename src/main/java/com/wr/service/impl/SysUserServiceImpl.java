@@ -2,6 +2,7 @@ package com.wr.service.impl;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.wr.common.exception.ServiceException;
 import com.wr.common.service.TokenService;
 import com.wr.common.utils.BeanUtil;
 import com.wr.common.utils.IdUtils;
@@ -108,6 +109,18 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserPo> im
 
     @Override
     public boolean updateUserPassStu(UpPwdStuDto upPwdStuDto) {
+        if (upPwdStuDto.getUserId() == SecurityUtils.getUserId()){
+            throw new ServiceException("不能停用当前账户");
+        }
+        if (SecurityUtils.isAdmin(upPwdStuDto.getUserId())){
+            throw new ServiceException("不能停用超级管理员用户");
+        }
+        SysUserPo sysUserPo = BeanUtil.beanToBean(upPwdStuDto, new SysUserPo());
+        sysUserPo.setUpdateBy(SecurityUtils.getUsername());
+        sysUserPo.setUpdateTime(new Date());
+        if (sysUserMapper.updateById(sysUserPo) > 0) {
+            return true;
+        }
         return false;
     }
 

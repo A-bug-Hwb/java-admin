@@ -1079,3 +1079,5 @@
 2023-07-21 16:06:01.663 DEBUG 32480 --- [http-nio-7076-exec-1] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m where m.deleted = 0 and m.menu_type in ('M', 'C') and m.status = 0 order by m.parent_id, m.order_num
 2023-07-21 16:06:01.668 DEBUG 32480 --- [http-nio-7076-exec-1] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==> Parameters: 
 2023-07-21 16:06:01.673 DEBUG 32480 --- [http-nio-7076-exec-1] c.w.m.SysMenuMapper.selectMenuTreeAll    : <==      Total: 6
+2023-07-21 17:17:11.655  INFO 32480 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-21 17:17:11.666  INFO 32480 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
