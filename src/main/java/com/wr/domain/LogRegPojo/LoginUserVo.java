@@ -21,8 +21,6 @@ public class LoginUserVo {
     @NotBlank(message = "用户密码不能为空")
     private String password;
     @ApiModelProperty(value = "验证码", required = true)
-    @NotNull
-    @NotBlank(message = "验证码不能为空")
     private String code;
     @ApiModelProperty(value = "获取验证码时返回的uuid", required = true)
     private String uuid;

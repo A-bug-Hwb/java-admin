@@ -87,7 +87,7 @@ public class SysUserController extends BaseController {
     @ApiOperation("修改用户信息")
     public AjaxResult edit(@RequestBody UpSysUserDto upSysUserDto)
     {
-        if (SecurityUtils.isAdmin(upSysUserDto.getUserId())){
+        if (getUserId() !=upSysUserDto.getUserId() && SecurityUtils.isAdmin(upSysUserDto.getUserId())){
             return error("不允许操作超级管理员用户");
         }else if (StringUtils.isNull(iSysUserService.findUserByUsername(upSysUserDto.getUserName()))){
             return error("用户名"+upSysUserDto.getUserName()+"已存在");

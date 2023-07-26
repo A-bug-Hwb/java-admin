@@ -42,11 +42,11 @@ public class LogRegServiceImpl implements ILogRegService {
     @Override
     public String login(String username, String password, String code, String uuid) {
 
-        boolean captchaEnabled = iSysConfigService.selectCaptchaEnabled();
-        // 验证码开关
-        if (captchaEnabled) {
-            validateCaptcha(code, uuid);
-        }
+//        boolean captchaEnabled = iSysConfigService.selectCaptchaEnabled();
+//        // 验证码开关
+//        if (captchaEnabled) {
+//            validateCaptcha(code, uuid);
+//        }
         Authentication authentication = null;
         try {
             // 用户验证
