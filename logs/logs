@@ -1,268 +1,50 @@
-2023-07-26 11:29:35.605  INFO 32984 --- [main] com.wr.DemoApplication                   : Starting DemoApplication using Java 1.8.0_191 on LAPTOP-NOCK2TV1 with PID 32984 (F:\MyWork\wr-admin\wr-service\target\classes started by ROG in F:\MyWork\wr-admin\wr-service)
-2023-07-26 11:29:35.611 DEBUG 32984 --- [main] com.wr.DemoApplication                   : Running with Spring Boot v2.6.15, Spring v5.3.27
-2023-07-26 11:29:35.611  INFO 32984 --- [main] com.wr.DemoApplication                   : The following 1 profile is active: "dev"
-2023-07-26 11:29:36.388  INFO 32984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2023-07-26 11:29:36.390  INFO 32984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-07-26 11:29:36.412  INFO 32984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-2023-07-26 11:29:37.053  INFO 32984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7076 (http)
-2023-07-26 11:29:37.060  INFO 32984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-26 11:29:37.060  INFO 32984 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-07-26 11:29:37.159  INFO 32984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-26 11:29:37.160  INFO 32984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1509 ms
-2023-07-26 11:29:37.332 DEBUG 32984 --- [main] com.wr.auth.JWTAuthorizationFilter       : Filter 'JWTAuthorizationFilter' configured for use
-2023-07-26 11:29:38.367  WARN 32984 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.wr.domain.SysUserRolePojo.SysUserRolePo".
-2023-07-26 11:29:38.367  WARN 32984 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.wr.domain.SysUserRolePojo.SysUserRolePo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2023-07-26 11:29:38.389  WARN 32984 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.wr.domain.SysRoleMenuPojo.SysRoleMenuPo".
-2023-07-26 11:29:38.389  WARN 32984 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.wr.domain.SysRoleMenuPojo.SysRoleMenuPo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2023-07-26 11:29:38.978  INFO 32984 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bf018dd, org.springframework.security.web.context.SecurityContextPersistenceFilter@111a7973, org.springframework.security.web.header.HeaderWriterFilter@6c8efde4, org.springframework.web.filter.CorsFilter@22bdb1d0, org.springframework.security.web.authentication.logout.LogoutFilter@33bdd01, org.springframework.web.filter.CorsFilter@22bdb1d0, com.wr.auth.JWTAuthorizationFilter@3520963d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78b0ec3a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cde374, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15a8cebd, org.springframework.security.web.session.SessionManagementFilter@2b441e56, org.springframework.security.web.access.ExceptionTranslationFilter@2e362407, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a056b26]
-2023-07-26 11:29:39.679  WARN 32984 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 7076 is already in use
-2023-07-26 11:29:39.683  INFO 32984 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-26 11:29:39.685  INFO 32984 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-07-26 11:29:39.698  INFO 32984 --- [main] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-07-26 11:29:39.710 ERROR 32984 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 7076 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 7076 or configure this application to listen on another port.
-
-2023-07-26 11:29:59.022  INFO 1712 --- [main] com.wr.DemoApplication                   : Starting DemoApplication using Java 1.8.0_191 on LAPTOP-NOCK2TV1 with PID 1712 (F:\MyWork\wr-admin\wr-service\target\classes started by ROG in F:\MyWork\wr-admin\wr-service)
-2023-07-26 11:29:59.024 DEBUG 1712 --- [main] com.wr.DemoApplication                   : Running with Spring Boot v2.6.15, Spring v5.3.27
-2023-07-26 11:29:59.024  INFO 1712 --- [main] com.wr.DemoApplication                   : The following 1 profile is active: "dev"
-2023-07-26 11:29:59.729  INFO 1712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2023-07-26 11:29:59.731  INFO 1712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-07-26 11:29:59.759  INFO 1712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-2023-07-26 11:30:00.389  INFO 1712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7076 (http)
-2023-07-26 11:30:00.394  INFO 1712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-26 11:30:00.395  INFO 1712 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-07-26 11:30:00.491  INFO 1712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-26 11:30:00.492  INFO 1712 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1431 ms
-2023-07-26 11:30:00.660 DEBUG 1712 --- [main] com.wr.auth.JWTAuthorizationFilter       : Filter 'JWTAuthorizationFilter' configured for use
-2023-07-26 11:30:01.599  WARN 1712 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.wr.domain.SysUserRolePojo.SysUserRolePo".
-2023-07-26 11:30:01.599  WARN 1712 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.wr.domain.SysUserRolePojo.SysUserRolePo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2023-07-26 11:30:01.619  WARN 1712 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.wr.domain.SysRoleMenuPojo.SysRoleMenuPo".
-2023-07-26 11:30:01.620  WARN 1712 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.wr.domain.SysRoleMenuPojo.SysRoleMenuPo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2023-07-26 11:30:02.114  INFO 1712 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f6c2763, org.springframework.security.web.context.SecurityContextPersistenceFilter@78b0ec3a, org.springframework.security.web.header.HeaderWriterFilter@3b170235, org.springframework.web.filter.CorsFilter@f438904, org.springframework.security.web.authentication.logout.LogoutFilter@7ac48f05, org.springframework.web.filter.CorsFilter@f438904, com.wr.auth.JWTAuthorizationFilter@630bf683, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f213a2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9263c54, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c82031b, org.springframework.security.web.session.SessionManagementFilter@3a109ff7, org.springframework.security.web.access.ExceptionTranslationFilter@440ef8d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@250967f1]
-2023-07-26 11:30:02.641  INFO 1712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7076 (http) with context path ''
-2023-07-26 11:30:02.913  INFO 1712 --- [main] com.wr.DemoApplication                   : Started DemoApplication in 4.214 seconds (JVM running for 4.933)
-2023-07-26 11:30:02.916  INFO 1712 --- [main] com.wr.DemoApplication                   : 启动成功
-2023-07-26 11:33:18.002  INFO 1712 --- [http-nio-7076-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-26 11:33:18.003  INFO 1712 --- [http-nio-7076-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-26 11:33:18.004  INFO 1712 --- [http-nio-7076-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-07-26 11:33:30.193  INFO 1712 --- [http-nio-7076-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2023-07-26 11:33:30.196 DEBUG 1712 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.selectList   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE deleted=0 AND (user_name = ?) limit 1
-2023-07-26 11:33:30.214 DEBUG 1712 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.selectList   : ==> Parameters: 小郝(String)
-2023-07-26 11:33:30.227 DEBUG 1712 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.selectList   : <==      Total: 1
-2023-07-26 11:33:30.247 DEBUG 1712 --- [http-nio-7076-exec-1] com.wr.mapper.UserRoleMapper.selectList  : ==>  Preparing: SELECT role_id,user_id FROM sys_user_role WHERE (user_id = ?)
-2023-07-26 11:33:30.248 DEBUG 1712 --- [http-nio-7076-exec-1] com.wr.mapper.UserRoleMapper.selectList  : ==> Parameters: 1(Long)
-2023-07-26 11:33:30.250 DEBUG 1712 --- [http-nio-7076-exec-1] com.wr.mapper.UserRoleMapper.selectList  : <==      Total: 1
-2023-07-26 11:33:30.255 DEBUG 1712 --- [http-nio-7076-exec-1] com.wr.mapper.SysRoleMapper.selectList   : ==>  Preparing: SELECT role_id,role_name,role_key,role_sort,menu_check_strictly,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_role WHERE deleted=0 AND (role_id IN (?))
-2023-07-26 11:33:30.256 DEBUG 1712 --- [http-nio-7076-exec-1] com.wr.mapper.SysRoleMapper.selectList   : ==> Parameters: 1(Long)
-2023-07-26 11:33:30.259 DEBUG 1712 --- [http-nio-7076-exec-1] com.wr.mapper.SysRoleMapper.selectList   : <==      Total: 1
-2023-07-26 11:33:30.416 DEBUG 1712 --- [http-nio-7076-exec-7] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m where m.deleted = 0 and m.menu_type in ('M', 'C') and m.status = 0 order by m.parent_id, m.order_num
-2023-07-26 11:33:30.420 DEBUG 1712 --- [http-nio-7076-exec-7] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==> Parameters: 
-2023-07-26 11:33:30.426 DEBUG 1712 --- [http-nio-7076-exec-7] c.w.m.SysMenuMapper.selectMenuTreeAll    : <==      Total: 6
-2023-07-26 11:33:32.780 DEBUG 1712 --- [http-nio-7076-exec-4] c.w.m.SysDictDataMapper.getDictDataList  : ==>  Preparing: select * from sys_dict_data WHERE deleted = 0 and dict_type = ?
-2023-07-26 11:33:32.780 DEBUG 1712 --- [http-nio-7076-exec-5] c.w.m.SysDictDataMapper.getDictDataList  : ==>  Preparing: select * from sys_dict_data WHERE deleted = 0 and dict_type = ?
-2023-07-26 11:33:32.781 DEBUG 1712 --- [http-nio-7076-exec-5] c.w.m.SysDictDataMapper.getDictDataList  : ==> Parameters: sys_user_sex(String)
-2023-07-26 11:33:32.781 DEBUG 1712 --- [http-nio-7076-exec-4] c.w.m.SysDictDataMapper.getDictDataList  : ==> Parameters: sys_normal_disable(String)
-2023-07-26 11:33:32.785 DEBUG 1712 --- [http-nio-7076-exec-4] c.w.m.SysDictDataMapper.getDictDataList  : <==      Total: 2
-2023-07-26 11:33:32.785 DEBUG 1712 --- [http-nio-7076-exec-5] c.w.m.SysDictDataMapper.getDictDataList  : <==      Total: 3
-2023-07-26 11:33:32.833 DEBUG 1712 --- [http-nio-7076-exec-6] c.w.m.SysUserMapper.getUserList_COUNT    : ==>  Preparing: SELECT count(0) FROM sys_user WHERE deleted = 0
-2023-07-26 11:33:32.834 DEBUG 1712 --- [http-nio-7076-exec-6] c.w.m.SysUserMapper.getUserList_COUNT    : ==> Parameters: 
-2023-07-26 11:33:32.836 DEBUG 1712 --- [http-nio-7076-exec-6] c.w.m.SysUserMapper.getUserList_COUNT    : <==      Total: 1
-2023-07-26 11:33:32.838 DEBUG 1712 --- [http-nio-7076-exec-6] com.wr.mapper.SysUserMapper.getUserList  : ==>  Preparing: select * from sys_user WHERE deleted = 0 LIMIT ?
-2023-07-26 11:33:32.839 DEBUG 1712 --- [http-nio-7076-exec-6] com.wr.mapper.SysUserMapper.getUserList  : ==> Parameters: 10(Integer)
-2023-07-26 11:33:32.841 DEBUG 1712 --- [http-nio-7076-exec-6] com.wr.mapper.SysUserMapper.getUserList  : <==      Total: 2
-2023-07-26 11:34:01.252 DEBUG 1712 --- [http-nio-7076-exec-7] c.w.m.SysRoleMapper.getRoleList_COUNT    : ==>  Preparing: SELECT count(0) FROM (SELECT DISTINCT r.role_id, r.role_name, r.role_key, r.role_sort, r.menu_check_strictly, r.status, r.create_time, r.remark FROM sys_role r LEFT JOIN sys_user_role ur ON ur.role_id = r.role_id LEFT JOIN sys_user u ON u.user_id = ur.user_id WHERE r.deleted = 0) table_count
-2023-07-26 11:34:01.253 DEBUG 1712 --- [http-nio-7076-exec-7] c.w.m.SysRoleMapper.getRoleList_COUNT    : ==> Parameters: 
-2023-07-26 11:34:01.256 DEBUG 1712 --- [http-nio-7076-exec-7] c.w.m.SysRoleMapper.getRoleList_COUNT    : <==      Total: 1
-2023-07-26 11:34:01.257 DEBUG 1712 --- [http-nio-7076-exec-7] com.wr.mapper.SysRoleMapper.getRoleList  : ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.menu_check_strictly, r.status, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id WHERE r.deleted = 0 LIMIT ?
-2023-07-26 11:34:01.258 DEBUG 1712 --- [http-nio-7076-exec-7] com.wr.mapper.SysRoleMapper.getRoleList  : ==> Parameters: 10(Integer)
-2023-07-26 11:34:01.260 DEBUG 1712 --- [http-nio-7076-exec-7] com.wr.mapper.SysRoleMapper.getRoleList  : <==      Total: 2
-2023-07-26 11:34:07.829 DEBUG 1712 --- [http-nio-7076-exec-5] com.wr.mapper.SysUserMapper.selectById   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE user_id=? AND deleted=0
-2023-07-26 11:34:07.829 DEBUG 1712 --- [http-nio-7076-exec-5] com.wr.mapper.SysUserMapper.selectById   : ==> Parameters: 2(Long)
-2023-07-26 11:34:07.831 DEBUG 1712 --- [http-nio-7076-exec-5] com.wr.mapper.SysUserMapper.selectById   : <==      Total: 1
-2023-07-26 11:34:12.195 DEBUG 1712 --- [http-nio-7076-exec-2] c.w.m.S.selectRolesByUserName            : ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.menu_check_strictly, r.status, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id WHERE r.deleted = 0 and u.user_id = ?
-2023-07-26 11:34:12.195 DEBUG 1712 --- [http-nio-7076-exec-2] c.w.m.S.selectRolesByUserName            : ==> Parameters: 1(Long)
-2023-07-26 11:34:12.197 DEBUG 1712 --- [http-nio-7076-exec-2] c.w.m.S.selectRolesByUserName            : <==      Total: 1
-2023-07-26 11:35:05.519  INFO 1712 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2023-07-26 11:35:05.524  INFO 1712 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2023-07-26 11:35:10.142  INFO 5536 --- [main] com.wr.DemoApplication                   : Starting DemoApplication using Java 1.8.0_191 on LAPTOP-NOCK2TV1 with PID 5536 (F:\MyWork\wr-admin\wr-service\target\classes started by ROG in F:\MyWork\wr-admin\wr-service)
-2023-07-26 11:35:10.143 DEBUG 5536 --- [main] com.wr.DemoApplication                   : Running with Spring Boot v2.6.15, Spring v5.3.27
-2023-07-26 11:35:10.144  INFO 5536 --- [main] com.wr.DemoApplication                   : The following 1 profile is active: "dev"
-2023-07-26 11:35:10.805  INFO 5536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2023-07-26 11:35:10.807  INFO 5536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-07-26 11:35:10.828  INFO 5536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
-2023-07-26 11:35:11.360  INFO 5536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7076 (http)
-2023-07-26 11:35:11.366  INFO 5536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-26 11:35:11.367  INFO 5536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-07-26 11:35:11.456  INFO 5536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-26 11:35:11.456  INFO 5536 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1280 ms
-2023-07-26 11:35:11.612 DEBUG 5536 --- [main] com.wr.auth.JWTAuthorizationFilter       : Filter 'JWTAuthorizationFilter' configured for use
-2023-07-26 11:35:12.503  WARN 5536 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.wr.domain.SysUserRolePojo.SysUserRolePo".
-2023-07-26 11:35:12.504  WARN 5536 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.wr.domain.SysUserRolePojo.SysUserRolePo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2023-07-26 11:35:12.526  WARN 5536 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.wr.domain.SysRoleMenuPojo.SysRoleMenuPo".
-2023-07-26 11:35:12.526  WARN 5536 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.wr.domain.SysRoleMenuPojo.SysRoleMenuPo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2023-07-26 11:35:13.002  INFO 5536 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@681de87f, org.springframework.security.web.context.SecurityContextPersistenceFilter@440ef8d, org.springframework.security.web.header.HeaderWriterFilter@61a87366, org.springframework.web.filter.CorsFilter@1d02af26, org.springframework.security.web.authentication.logout.LogoutFilter@46612bfc, org.springframework.web.filter.CorsFilter@1d02af26, com.wr.auth.JWTAuthorizationFilter@66813e6e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8f2e3e6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45e140ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2eb1c615, org.springframework.security.web.session.SessionManagementFilter@7c0df4ab, org.springframework.security.web.access.ExceptionTranslationFilter@6afbe6a1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29bd85db]
-2023-07-26 11:35:13.451  INFO 5536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7076 (http) with context path ''
-2023-07-26 11:35:13.741  INFO 5536 --- [main] com.wr.DemoApplication                   : Started DemoApplication in 3.885 seconds (JVM running for 4.538)
-2023-07-26 11:35:13.743  INFO 5536 --- [main] com.wr.DemoApplication                   : 启动成功
-2023-07-26 11:35:16.948  INFO 5536 --- [http-nio-7076-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-26 11:35:16.949  INFO 5536 --- [http-nio-7076-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-26 11:35:16.951  INFO 5536 --- [http-nio-7076-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-07-26 11:36:30.952  INFO 5536 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
-2023-07-26 11:36:35.787  INFO 27660 --- [main] com.wr.DemoApplication                   : Starting DemoApplication using Java 1.8.0_191 on LAPTOP-NOCK2TV1 with PID 27660 (F:\MyWork\wr-admin\wr-service\target\classes started by ROG in F:\MyWork\wr-admin\wr-service)
-2023-07-26 11:36:35.789 DEBUG 27660 --- [main] com.wr.DemoApplication                   : Running with Spring Boot v2.6.15, Spring v5.3.27
-2023-07-26 11:36:35.790  INFO 27660 --- [main] com.wr.DemoApplication                   : The following 1 profile is active: "dev"
-2023-07-26 11:36:36.493  INFO 27660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2023-07-26 11:36:36.494  INFO 27660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-07-26 11:36:36.514  INFO 27660 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
-2023-07-26 11:36:37.060  INFO 27660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7076 (http)
-2023-07-26 11:36:37.066  INFO 27660 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-07-26 11:36:37.066  INFO 27660 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-07-26 11:36:37.158  INFO 27660 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-07-26 11:36:37.159  INFO 27660 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1334 ms
-2023-07-26 11:36:37.317 DEBUG 27660 --- [main] com.wr.auth.JWTAuthorizationFilter       : Filter 'JWTAuthorizationFilter' configured for use
-2023-07-26 11:36:38.274  WARN 27660 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.wr.domain.SysUserRolePojo.SysUserRolePo".
-2023-07-26 11:36:38.274  WARN 27660 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.wr.domain.SysUserRolePojo.SysUserRolePo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2023-07-26 11:36:38.294  WARN 27660 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.wr.domain.SysRoleMenuPojo.SysRoleMenuPo".
-2023-07-26 11:36:38.295  WARN 27660 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.wr.domain.SysRoleMenuPojo.SysRoleMenuPo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-2023-07-26 11:36:38.852  INFO 27660 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a4464c5, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c8efde4, org.springframework.security.web.header.HeaderWriterFilter@53feeac9, org.springframework.web.filter.CorsFilter@18d003cd, org.springframework.security.web.authentication.logout.LogoutFilter@15369d73, org.springframework.web.filter.CorsFilter@18d003cd, com.wr.auth.JWTAuthorizationFilter@65afeb6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b170235, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54326e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ae590f6, org.springframework.security.web.session.SessionManagementFilter@17fbfb02, org.springframework.security.web.access.ExceptionTranslationFilter@259287ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@38087342]
-2023-07-26 11:36:39.287  INFO 27660 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7076 (http) with context path ''
-2023-07-26 11:36:39.561  INFO 27660 --- [main] com.wr.DemoApplication                   : Started DemoApplication in 4.098 seconds (JVM running for 4.774)
-2023-07-26 11:36:39.564  INFO 27660 --- [main] com.wr.DemoApplication                   : 启动成功
-2023-07-26 11:36:42.847  INFO 27660 --- [http-nio-7076-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-07-26 11:36:42.848  INFO 27660 --- [http-nio-7076-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-07-26 11:36:42.849  INFO 27660 --- [http-nio-7076-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-07-26 11:36:43.746  INFO 27660 --- [http-nio-7076-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2023-07-26 11:36:43.784 DEBUG 27660 --- [http-nio-7076-exec-1] c.w.m.SysUserMapper.getUserList_COUNT    : ==>  Preparing: SELECT count(0) FROM sys_user WHERE deleted = 0
-2023-07-26 11:36:43.798 DEBUG 27660 --- [http-nio-7076-exec-1] c.w.m.SysUserMapper.getUserList_COUNT    : ==> Parameters: 
-2023-07-26 11:36:43.808 DEBUG 27660 --- [http-nio-7076-exec-1] c.w.m.SysUserMapper.getUserList_COUNT    : <==      Total: 1
-2023-07-26 11:36:43.810 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.getUserList  : ==>  Preparing: select * from sys_user WHERE deleted = 0 LIMIT ?
-2023-07-26 11:36:43.813 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.getUserList  : ==> Parameters: 10(Integer)
-2023-07-26 11:36:43.817 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.getUserList  : <==      Total: 2
-2023-07-26 11:36:45.668 DEBUG 27660 --- [http-nio-7076-exec-3] c.w.m.SysRoleMapper.getRoleList_COUNT    : ==>  Preparing: SELECT count(0) FROM (SELECT DISTINCT r.role_id, r.role_name, r.role_key, r.role_sort, r.menu_check_strictly, r.status, r.create_time, r.remark FROM sys_role r LEFT JOIN sys_user_role ur ON ur.role_id = r.role_id LEFT JOIN sys_user u ON u.user_id = ur.user_id WHERE r.deleted = 0) table_count
-2023-07-26 11:36:45.673 DEBUG 27660 --- [http-nio-7076-exec-3] c.w.m.SysRoleMapper.getRoleList_COUNT    : ==> Parameters: 
-2023-07-26 11:36:45.675 DEBUG 27660 --- [http-nio-7076-exec-3] c.w.m.SysRoleMapper.getRoleList_COUNT    : <==      Total: 1
-2023-07-26 11:36:45.676 DEBUG 27660 --- [http-nio-7076-exec-3] com.wr.mapper.SysRoleMapper.getRoleList  : ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.menu_check_strictly, r.status, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id WHERE r.deleted = 0 LIMIT ?
-2023-07-26 11:36:45.677 DEBUG 27660 --- [http-nio-7076-exec-3] com.wr.mapper.SysRoleMapper.getRoleList  : ==> Parameters: 10(Integer)
-2023-07-26 11:36:45.680 DEBUG 27660 --- [http-nio-7076-exec-3] com.wr.mapper.SysRoleMapper.getRoleList  : <==      Total: 2
-2023-07-26 11:36:46.439 DEBUG 27660 --- [http-nio-7076-exec-2] com.wr.mapper.SysUserMapper.selectList   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE deleted=0 AND (user_name = ?) limit 1
-2023-07-26 11:36:46.440 DEBUG 27660 --- [http-nio-7076-exec-2] com.wr.mapper.SysUserMapper.selectList   : ==> Parameters: 123(String)
-2023-07-26 11:36:46.442 DEBUG 27660 --- [http-nio-7076-exec-2] com.wr.mapper.SysUserMapper.selectList   : <==      Total: 0
-2023-07-26 11:38:04.206 DEBUG 27660 --- [http-nio-7076-exec-10] com.wr.mapper.SysUserMapper.selectById   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE user_id=? AND deleted=0
-2023-07-26 11:38:04.207 DEBUG 27660 --- [http-nio-7076-exec-10] com.wr.mapper.SysUserMapper.selectById   : ==> Parameters: 2(Long)
-2023-07-26 11:38:04.208 DEBUG 27660 --- [http-nio-7076-exec-10] com.wr.mapper.SysUserMapper.selectById   : <==      Total: 1
-2023-07-26 11:38:14.500 DEBUG 27660 --- [http-nio-7076-exec-8] com.wr.mapper.SysUserMapper.selectById   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE user_id=? AND deleted=0
-2023-07-26 11:38:14.501 DEBUG 27660 --- [http-nio-7076-exec-8] com.wr.mapper.SysUserMapper.selectById   : ==> Parameters: 2(Long)
-2023-07-26 11:38:14.502 DEBUG 27660 --- [http-nio-7076-exec-8] com.wr.mapper.SysUserMapper.selectById   : <==      Total: 1
-2023-07-26 11:38:14.503 DEBUG 27660 --- [http-nio-7076-exec-8] c.w.m.S.selectRolePermissionByUserId     : ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.menu_check_strictly, r.status, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id WHERE r.deleted = 0 and ur.user_id = ?
-2023-07-26 11:38:14.503 DEBUG 27660 --- [http-nio-7076-exec-8] c.w.m.S.selectRolePermissionByUserId     : ==> Parameters: 2(Long)
-2023-07-26 11:38:14.505 DEBUG 27660 --- [http-nio-7076-exec-8] c.w.m.S.selectRolePermissionByUserId     : <==      Total: 1
-2023-07-26 11:38:14.506 DEBUG 27660 --- [http-nio-7076-exec-8] com.wr.mapper.SysRoleMapper.getRoleList  : ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.menu_check_strictly, r.status, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id WHERE r.deleted = 0
-2023-07-26 11:38:14.506 DEBUG 27660 --- [http-nio-7076-exec-8] com.wr.mapper.SysRoleMapper.getRoleList  : ==> Parameters: 
-2023-07-26 11:38:14.508 DEBUG 27660 --- [http-nio-7076-exec-8] com.wr.mapper.SysRoleMapper.getRoleList  : <==      Total: 2
-2023-07-26 11:38:34.696 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.selectList   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE deleted=0 AND (user_name = ?) limit 1
-2023-07-26 11:38:34.697 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.selectList   : ==> Parameters: mrzkj(String)
-2023-07-26 11:38:34.699 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.selectList   : <==      Total: 1
-2023-07-26 11:38:34.709 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.UserRoleMapper.selectList  : ==>  Preparing: SELECT role_id,user_id FROM sys_user_role WHERE (user_id = ?)
-2023-07-26 11:38:34.711 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.UserRoleMapper.selectList  : ==> Parameters: 1(Long)
-2023-07-26 11:38:34.712 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.UserRoleMapper.selectList  : <==      Total: 1
-2023-07-26 11:38:34.715 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysRoleMapper.selectList   : ==>  Preparing: SELECT role_id,role_name,role_key,role_sort,menu_check_strictly,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_role WHERE deleted=0 AND (role_id IN (?))
-2023-07-26 11:38:34.716 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysRoleMapper.selectList   : ==> Parameters: 1(Long)
-2023-07-26 11:38:34.717 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysRoleMapper.selectList   : <==      Total: 1
-2023-07-26 11:38:57.983 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.SysUserMapper.selectList   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE deleted=0 AND (user_name = ?) limit 1
-2023-07-26 11:38:57.983 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.SysUserMapper.selectList   : ==> Parameters: mrzkj(String)
-2023-07-26 11:38:57.985 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.SysUserMapper.selectList   : <==      Total: 1
-2023-07-26 11:38:57.986 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.UserRoleMapper.selectList  : ==>  Preparing: SELECT role_id,user_id FROM sys_user_role WHERE (user_id = ?)
-2023-07-26 11:38:57.987 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.UserRoleMapper.selectList  : ==> Parameters: 1(Long)
-2023-07-26 11:38:57.988 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.UserRoleMapper.selectList  : <==      Total: 1
-2023-07-26 11:38:57.990 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.SysRoleMapper.selectList   : ==>  Preparing: SELECT role_id,role_name,role_key,role_sort,menu_check_strictly,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_role WHERE deleted=0 AND (role_id IN (?))
-2023-07-26 11:38:57.990 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.SysRoleMapper.selectList   : ==> Parameters: 1(Long)
-2023-07-26 11:38:57.992 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.SysRoleMapper.selectList   : <==      Total: 1
-2023-07-26 11:38:58.090 DEBUG 27660 --- [http-nio-7076-exec-7] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m where m.deleted = 0 and m.menu_type in ('M', 'C') and m.status = 0 order by m.parent_id, m.order_num
-2023-07-26 11:38:58.092 DEBUG 27660 --- [http-nio-7076-exec-7] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==> Parameters: 
-2023-07-26 11:38:58.096 DEBUG 27660 --- [http-nio-7076-exec-7] c.w.m.SysMenuMapper.selectMenuTreeAll    : <==      Total: 6
-2023-07-26 11:41:05.808 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.SysUserMapper.selectList   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE deleted=0 AND (user_name = ?) limit 1
-2023-07-26 11:41:05.809 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.SysUserMapper.selectList   : ==> Parameters: mrzkj(String)
-2023-07-26 11:41:05.810 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.SysUserMapper.selectList   : <==      Total: 1
-2023-07-26 11:41:05.811 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.UserRoleMapper.selectList  : ==>  Preparing: SELECT role_id,user_id FROM sys_user_role WHERE (user_id = ?)
-2023-07-26 11:41:05.812 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.UserRoleMapper.selectList  : ==> Parameters: 1(Long)
-2023-07-26 11:41:05.813 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.UserRoleMapper.selectList  : <==      Total: 1
-2023-07-26 11:41:05.814 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.SysRoleMapper.selectList   : ==>  Preparing: SELECT role_id,role_name,role_key,role_sort,menu_check_strictly,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_role WHERE deleted=0 AND (role_id IN (?))
-2023-07-26 11:41:05.814 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.SysRoleMapper.selectList   : ==> Parameters: 1(Long)
-2023-07-26 11:41:05.815 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.SysRoleMapper.selectList   : <==      Total: 1
-2023-07-26 11:41:06.986 DEBUG 27660 --- [http-nio-7076-exec-6] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m where m.deleted = 0 and m.menu_type in ('M', 'C') and m.status = 0 order by m.parent_id, m.order_num
-2023-07-26 11:41:06.987 DEBUG 27660 --- [http-nio-7076-exec-6] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==> Parameters: 
-2023-07-26 11:41:06.989 DEBUG 27660 --- [http-nio-7076-exec-6] c.w.m.SysMenuMapper.selectMenuTreeAll    : <==      Total: 6
-2023-07-26 11:41:58.927 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.common.service.PermissionService  : 当前权限：system:user:list 
-2023-07-26 11:41:58.929 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.selectList   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE deleted=0 AND (user_name = ?) limit 1
-2023-07-26 11:41:58.929 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.selectList   : ==> Parameters: 测试(String)
-2023-07-26 11:41:58.930 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.selectList   : <==      Total: 0
-2023-07-26 11:41:58.992 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.insert       : ==>  Preparing: INSERT INTO sys_user ( uid, user_name, password, status ) VALUES ( ?, ?, ?, ? )
-2023-07-26 11:41:58.998 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.insert       : ==> Parameters: 1674133373984(String), 测试(String), $2a$10$uJdEsRv1SZQnF611S2p3H.Dgj4nNuRLpnXCyojHoacRXdXdVaVtHi(String), 0(String)
-2023-07-26 11:41:59.003 DEBUG 27660 --- [http-nio-7076-exec-1] com.wr.mapper.SysUserMapper.insert       : <==    Updates: 1
-2023-07-26 11:42:20.311 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.SysUserMapper.selectList   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE deleted=0 AND (user_name = ?) limit 1
-2023-07-26 11:42:20.312 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.SysUserMapper.selectList   : ==> Parameters: 测试(String)
-2023-07-26 11:42:20.313 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.SysUserMapper.selectList   : <==      Total: 1
-2023-07-26 11:42:20.314 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.UserRoleMapper.selectList  : ==>  Preparing: SELECT role_id,user_id FROM sys_user_role WHERE (user_id = ?)
-2023-07-26 11:42:20.314 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.UserRoleMapper.selectList  : ==> Parameters: 9(Long)
-2023-07-26 11:42:20.315 DEBUG 27660 --- [http-nio-7076-exec-4] com.wr.mapper.UserRoleMapper.selectList  : <==      Total: 0
-2023-07-26 11:44:44.346 DEBUG 27660 --- [http-nio-7076-exec-10] com.wr.mapper.SysUserMapper.selectList   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE deleted=0 AND (user_name = ?) limit 1
-2023-07-26 11:44:44.346 DEBUG 27660 --- [http-nio-7076-exec-10] com.wr.mapper.SysUserMapper.selectList   : ==> Parameters: 测试(String)
-2023-07-26 11:44:44.348 DEBUG 27660 --- [http-nio-7076-exec-10] com.wr.mapper.SysUserMapper.selectList   : <==      Total: 1
-2023-07-26 11:44:44.349 DEBUG 27660 --- [http-nio-7076-exec-10] com.wr.mapper.UserRoleMapper.selectList  : ==>  Preparing: SELECT role_id,user_id FROM sys_user_role WHERE (user_id = ?)
-2023-07-26 11:44:44.349 DEBUG 27660 --- [http-nio-7076-exec-10] com.wr.mapper.UserRoleMapper.selectList  : ==> Parameters: 9(Long)
-2023-07-26 11:44:44.350 DEBUG 27660 --- [http-nio-7076-exec-10] com.wr.mapper.UserRoleMapper.selectList  : <==      Total: 0
-2023-07-26 11:45:23.541 DEBUG 27660 --- [http-nio-7076-exec-8] com.wr.mapper.SysUserMapper.selectList   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE deleted=0 AND (user_name = ?) limit 1
-2023-07-26 11:45:23.542 DEBUG 27660 --- [http-nio-7076-exec-8] com.wr.mapper.SysUserMapper.selectList   : ==> Parameters: 测试(String)
-2023-07-26 11:45:23.543 DEBUG 27660 --- [http-nio-7076-exec-8] com.wr.mapper.SysUserMapper.selectList   : <==      Total: 1
-2023-07-26 11:45:23.544 DEBUG 27660 --- [http-nio-7076-exec-8] com.wr.mapper.UserRoleMapper.selectList  : ==>  Preparing: SELECT role_id,user_id FROM sys_user_role WHERE (user_id = ?)
-2023-07-26 11:45:23.545 DEBUG 27660 --- [http-nio-7076-exec-8] com.wr.mapper.UserRoleMapper.selectList  : ==> Parameters: 9(Long)
-2023-07-26 11:45:23.545 DEBUG 27660 --- [http-nio-7076-exec-8] com.wr.mapper.UserRoleMapper.selectList  : <==      Total: 0
-2023-07-26 11:46:40.428 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.SysUserMapper.selectList   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE deleted=0 AND (user_name = ?) limit 1
-2023-07-26 11:46:40.429 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.SysUserMapper.selectList   : ==> Parameters: mrzkj(String)
-2023-07-26 11:46:40.431 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.SysUserMapper.selectList   : <==      Total: 1
-2023-07-26 11:46:40.432 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.UserRoleMapper.selectList  : ==>  Preparing: SELECT role_id,user_id FROM sys_user_role WHERE (user_id = ?)
-2023-07-26 11:46:40.433 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.UserRoleMapper.selectList  : ==> Parameters: 1(Long)
-2023-07-26 11:46:40.433 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.UserRoleMapper.selectList  : <==      Total: 1
-2023-07-26 11:46:40.435 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.SysRoleMapper.selectList   : ==>  Preparing: SELECT role_id,role_name,role_key,role_sort,menu_check_strictly,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_role WHERE deleted=0 AND (role_id IN (?))
-2023-07-26 11:46:40.436 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.SysRoleMapper.selectList   : ==> Parameters: 1(Long)
-2023-07-26 11:46:40.437 DEBUG 27660 --- [http-nio-7076-exec-5] com.wr.mapper.SysRoleMapper.selectList   : <==      Total: 1
-2023-07-26 11:46:41.583 DEBUG 27660 --- [http-nio-7076-exec-7] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m where m.deleted = 0 and m.menu_type in ('M', 'C') and m.status = 0 order by m.parent_id, m.order_num
-2023-07-26 11:46:41.583 DEBUG 27660 --- [http-nio-7076-exec-7] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==> Parameters: 
-2023-07-26 11:46:41.586 DEBUG 27660 --- [http-nio-7076-exec-7] c.w.m.SysMenuMapper.selectMenuTreeAll    : <==      Total: 6
-2023-07-26 11:48:18.353 DEBUG 27660 --- [http-nio-7076-exec-9] c.w.m.S.selectRolesByUserName            : ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.menu_check_strictly, r.status, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id WHERE r.deleted = 0 and u.user_id = ?
-2023-07-26 11:48:18.354 DEBUG 27660 --- [http-nio-7076-exec-9] c.w.m.S.selectRolesByUserName            : ==> Parameters: 1(Long)
-2023-07-26 11:48:18.355 DEBUG 27660 --- [http-nio-7076-exec-9] c.w.m.S.selectRolesByUserName            : <==      Total: 1
-2023-07-26 11:50:04.281 DEBUG 27660 --- [http-nio-7076-exec-3] c.w.m.S.selectRolesByUserName            : ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.menu_check_strictly, r.status, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id WHERE r.deleted = 0 and u.user_id = ?
-2023-07-26 11:50:04.282 DEBUG 27660 --- [http-nio-7076-exec-3] c.w.m.S.selectRolesByUserName            : ==> Parameters: 1(Long)
-2023-07-26 11:50:04.283 DEBUG 27660 --- [http-nio-7076-exec-3] c.w.m.S.selectRolesByUserName            : <==      Total: 1
-2023-07-26 11:52:21.005 DEBUG 27660 --- [http-nio-7076-exec-6] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m where m.deleted = 0 and m.menu_type in ('M', 'C') and m.status = 0 order by m.parent_id, m.order_num
-2023-07-26 11:52:21.006 DEBUG 27660 --- [http-nio-7076-exec-6] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==> Parameters: 
-2023-07-26 11:52:21.008 DEBUG 27660 --- [http-nio-7076-exec-6] c.w.m.SysMenuMapper.selectMenuTreeAll    : <==      Total: 6
-2023-07-26 11:52:23.468 DEBUG 27660 --- [http-nio-7076-exec-9] c.w.m.S.selectRolesByUserName            : ==>  Preparing: select distinct r.role_id, r.role_name, r.role_key, r.role_sort, r.menu_check_strictly, r.status, r.create_time, r.remark from sys_role r left join sys_user_role ur on ur.role_id = r.role_id left join sys_user u on u.user_id = ur.user_id WHERE r.deleted = 0 and u.user_id = ?
-2023-07-26 11:52:23.469 DEBUG 27660 --- [http-nio-7076-exec-9] c.w.m.S.selectRolesByUserName            : ==> Parameters: 1(Long)
-2023-07-26 11:52:23.470 DEBUG 27660 --- [http-nio-7076-exec-9] c.w.m.S.selectRolesByUserName            : <==      Total: 1
-2023-07-26 11:53:33.664 DEBUG 27660 --- [http-nio-7076-exec-9] c.w.m.SysUserMapper.getUserList_COUNT    : ==>  Preparing: SELECT count(0) FROM sys_user WHERE deleted = 0
-2023-07-26 11:53:33.664 DEBUG 27660 --- [http-nio-7076-exec-9] c.w.m.SysUserMapper.getUserList_COUNT    : ==> Parameters: 
-2023-07-26 11:53:33.665 DEBUG 27660 --- [http-nio-7076-exec-9] c.w.m.SysUserMapper.getUserList_COUNT    : <==      Total: 1
-2023-07-26 11:53:33.666 DEBUG 27660 --- [http-nio-7076-exec-9] com.wr.mapper.SysUserMapper.getUserList  : ==>  Preparing: select * from sys_user WHERE deleted = 0 LIMIT ?
-2023-07-26 11:53:33.666 DEBUG 27660 --- [http-nio-7076-exec-9] com.wr.mapper.SysUserMapper.getUserList  : ==> Parameters: 10(Integer)
-2023-07-26 11:53:33.668 DEBUG 27660 --- [http-nio-7076-exec-9] com.wr.mapper.SysUserMapper.getUserList  : <==      Total: 3
-2023-07-26 11:53:33.668 DEBUG 27660 --- [http-nio-7076-exec-7] c.w.m.SysDictDataMapper.getDictDataList  : ==>  Preparing: select * from sys_dict_data WHERE deleted = 0 and dict_type = ?
-2023-07-26 11:53:33.668 DEBUG 27660 --- [http-nio-7076-exec-7] c.w.m.SysDictDataMapper.getDictDataList  : ==> Parameters: sys_normal_disable(String)
-2023-07-26 11:53:33.670 DEBUG 27660 --- [http-nio-7076-exec-7] c.w.m.SysDictDataMapper.getDictDataList  : <==      Total: 2
-2023-07-26 11:53:33.670 DEBUG 27660 --- [http-nio-7076-exec-6] c.w.m.SysDictDataMapper.getDictDataList  : ==>  Preparing: select * from sys_dict_data WHERE deleted = 0 and dict_type = ?
-2023-07-26 11:53:33.671 DEBUG 27660 --- [http-nio-7076-exec-6] c.w.m.SysDictDataMapper.getDictDataList  : ==> Parameters: sys_user_sex(String)
-2023-07-26 11:53:33.672 DEBUG 27660 --- [http-nio-7076-exec-6] c.w.m.SysDictDataMapper.getDictDataList  : <==      Total: 3
+2023-07-27 09:21:00.611  INFO 33704 --- [main] com.wr.DemoApplication                   : Starting DemoApplication using Java 1.8.0_191 on LAPTOP-NOCK2TV1 with PID 33704 (F:\MyWork\wr-admin\wr-service\target\classes started by ROG in F:\MyWork\wr-admin\wr-service)
+2023-07-27 09:21:00.615 DEBUG 33704 --- [main] com.wr.DemoApplication                   : Running with Spring Boot v2.6.15, Spring v5.3.27
+2023-07-27 09:21:00.616  INFO 33704 --- [main] com.wr.DemoApplication                   : The following 1 profile is active: "dev"
+2023-07-27 09:21:01.435  INFO 33704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-27 09:21:01.437  INFO 33704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-27 09:21:01.464  INFO 33704 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2023-07-27 09:21:02.105  INFO 33704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7076 (http)
+2023-07-27 09:21:02.112  INFO 33704 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-27 09:21:02.112  INFO 33704 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-27 09:21:02.433  INFO 33704 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-27 09:21:02.433  INFO 33704 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1781 ms
+2023-07-27 09:21:02.616 DEBUG 33704 --- [main] com.wr.auth.JWTAuthorizationFilter       : Filter 'JWTAuthorizationFilter' configured for use
+2023-07-27 09:21:03.742  WARN 33704 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.wr.domain.SysUserRolePojo.SysUserRolePo".
+2023-07-27 09:21:03.742  WARN 33704 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.wr.domain.SysUserRolePojo.SysUserRolePo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-07-27 09:21:03.765  WARN 33704 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.wr.domain.SysRoleMenuPojo.SysRoleMenuPo".
+2023-07-27 09:21:03.765  WARN 33704 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.wr.domain.SysRoleMenuPojo.SysRoleMenuPo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-07-27 09:21:04.316  INFO 33704 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@370c7cc5, org.springframework.security.web.context.SecurityContextPersistenceFilter@45e140ae, org.springframework.security.web.header.HeaderWriterFilter@3915e7c3, org.springframework.web.filter.CorsFilter@45900b64, org.springframework.security.web.authentication.logout.LogoutFilter@28daf506, org.springframework.web.filter.CorsFilter@45900b64, com.wr.auth.JWTAuthorizationFilter@6e60f18, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b4814d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a109ff7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61b838f2, org.springframework.security.web.session.SessionManagementFilter@24e5389c, org.springframework.security.web.access.ExceptionTranslationFilter@dada335, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d9d2119]
+2023-07-27 09:21:04.782  INFO 33704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7076 (http) with context path ''
+2023-07-27 09:21:05.100  INFO 33704 --- [main] com.wr.DemoApplication                   : Started DemoApplication in 4.826 seconds (JVM running for 8.446)
+2023-07-27 09:21:05.103  INFO 33704 --- [main] com.wr.DemoApplication                   : 启动成功
+2023-07-27 13:41:29.184  INFO 33704 --- [http-nio-7076-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-27 13:41:29.186  INFO 33704 --- [http-nio-7076-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-27 13:41:29.210  INFO 33704 --- [http-nio-7076-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
+2023-07-27 13:41:35.828  INFO 33704 --- [http-nio-7076-exec-8] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-07-27 13:41:35.833 DEBUG 33704 --- [http-nio-7076-exec-8] com.wr.mapper.SysUserMapper.selectList   : ==>  Preparing: SELECT user_id,uid,nick_name,user_name,avatar,sex,mobile,mailbox,password,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_user WHERE deleted=0 AND (user_name = ?) limit 1
+2023-07-27 13:41:35.858 DEBUG 33704 --- [http-nio-7076-exec-8] com.wr.mapper.SysUserMapper.selectList   : ==> Parameters: mrzkj(String)
+2023-07-27 13:41:35.875 DEBUG 33704 --- [http-nio-7076-exec-8] com.wr.mapper.SysUserMapper.selectList   : <==      Total: 1
+2023-07-27 13:41:35.906 DEBUG 33704 --- [http-nio-7076-exec-8] com.wr.mapper.UserRoleMapper.selectList  : ==>  Preparing: SELECT role_id,user_id FROM sys_user_role WHERE (user_id = ?)
+2023-07-27 13:41:35.908 DEBUG 33704 --- [http-nio-7076-exec-8] com.wr.mapper.UserRoleMapper.selectList  : ==> Parameters: 1(Long)
+2023-07-27 13:41:35.910 DEBUG 33704 --- [http-nio-7076-exec-8] com.wr.mapper.UserRoleMapper.selectList  : <==      Total: 1
+2023-07-27 13:41:35.918 DEBUG 33704 --- [http-nio-7076-exec-8] com.wr.mapper.SysRoleMapper.selectList   : ==>  Preparing: SELECT role_id,role_name,role_key,role_sort,menu_check_strictly,status,create_by,create_time,update_by,update_time,remark,deleted FROM sys_role WHERE deleted=0 AND (role_id IN (?))
+2023-07-27 13:41:35.919 DEBUG 33704 --- [http-nio-7076-exec-8] com.wr.mapper.SysRoleMapper.selectList   : ==> Parameters: 1(Long)
+2023-07-27 13:41:35.922 DEBUG 33704 --- [http-nio-7076-exec-8] com.wr.mapper.SysRoleMapper.selectList   : <==      Total: 1
+2023-07-27 13:41:36.655 DEBUG 33704 --- [http-nio-7076-exec-1] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==>  Preparing: select distinct m.menu_id, m.parent_id, m.menu_name, m.path, m.component, m.`query`, m.visible, m.status, ifnull(m.perms,'') as perms, m.is_frame, m.is_cache, m.menu_type, m.icon, m.order_num, m.create_time from sys_menu m where m.deleted = 0 and m.menu_type in ('M', 'C') and m.status = 0 order by m.parent_id, m.order_num
+2023-07-27 13:41:36.660 DEBUG 33704 --- [http-nio-7076-exec-1] c.w.m.SysMenuMapper.selectMenuTreeAll    : ==> Parameters: 
+2023-07-27 13:41:36.665 DEBUG 33704 --- [http-nio-7076-exec-1] c.w.m.SysMenuMapper.selectMenuTreeAll    : <==      Total: 6
+2023-07-27 14:03:11.128 DEBUG 33704 --- [http-nio-7076-exec-6] c.w.m.SysDictDataMapper.getDictDataList  : ==>  Preparing: select * from sys_dict_data WHERE deleted = 0 and dict_type = ?
+2023-07-27 14:03:11.129 DEBUG 33704 --- [http-nio-7076-exec-6] c.w.m.SysDictDataMapper.getDictDataList  : ==> Parameters: sys_user_sex(String)
+2023-07-27 14:03:11.133 DEBUG 33704 --- [http-nio-7076-exec-6] c.w.m.SysDictDataMapper.getDictDataList  : <==      Total: 3
+2023-07-27 14:03:11.134 DEBUG 33704 --- [http-nio-7076-exec-8] c.w.m.SysDictDataMapper.getDictDataList  : ==>  Preparing: select * from sys_dict_data WHERE deleted = 0 and dict_type = ?
+2023-07-27 14:03:11.134 DEBUG 33704 --- [http-nio-7076-exec-8] c.w.m.SysDictDataMapper.getDictDataList  : ==> Parameters: sys_normal_disable(String)
+2023-07-27 14:03:11.137 DEBUG 33704 --- [http-nio-7076-exec-8] c.w.m.SysDictDataMapper.getDictDataList  : <==      Total: 2
+2023-07-27 14:03:11.182 DEBUG 33704 --- [http-nio-7076-exec-7] c.w.m.SysUserMapper.getUserList_COUNT    : ==>  Preparing: SELECT count(0) FROM sys_user WHERE deleted = 0
+2023-07-27 14:03:11.183 DEBUG 33704 --- [http-nio-7076-exec-7] c.w.m.SysUserMapper.getUserList_COUNT    : ==> Parameters: 
+2023-07-27 14:03:11.185 DEBUG 33704 --- [http-nio-7076-exec-7] c.w.m.SysUserMapper.getUserList_COUNT    : <==      Total: 1
+2023-07-27 14:03:11.188 DEBUG 33704 --- [http-nio-7076-exec-7] com.wr.mapper.SysUserMapper.getUserList  : ==>  Preparing: select * from sys_user WHERE deleted = 0 LIMIT ?
+2023-07-27 14:03:11.189 DEBUG 33704 --- [http-nio-7076-exec-7] com.wr.mapper.SysUserMapper.getUserList  : ==> Parameters: 10(Integer)
+2023-07-27 14:03:11.191 DEBUG 33704 --- [http-nio-7076-exec-7] com.wr.mapper.SysUserMapper.getUserList  : <==      Total: 2
+2023-07-27 17:00:44.948  INFO 33704 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-07-27 17:00:44.953  INFO 33704 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

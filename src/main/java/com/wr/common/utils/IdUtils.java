@@ -2,6 +2,7 @@ package com.wr.common.utils;
 
 import com.wr.common.SnowflakeIdWorker;
 import com.wr.common.SnowflakeIdWorker15;
+import com.wr.common.SnowflakeIdWorker18;
 
 /**
  * ID生成器工具类
@@ -22,6 +23,11 @@ public class IdUtils
     {
         SnowflakeIdWorker15 idWorker = new SnowflakeIdWorker15(1);
         return String.valueOf(idWorker.nextId());
+    }
+
+    public static String getUUID18()
+    {
+        return String.valueOf(SnowflakeIdWorker18.INSTANCE.nextId());
     }
 
     /**

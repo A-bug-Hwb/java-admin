@@ -67,7 +67,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserPo> im
     @Override
     public boolean registerUser(SysUserBo user) {
         SysUserPo userPo = BeanUtil.beanToBean(user, new SysUserPo());
-        userPo.setUid(IdUtils.getUUID15());
+        userPo.setUid(IdUtils.getUUID18());
         userPo.setStatus("0");
         if (sysUserMapper.insert(userPo) > 0) {
             return true;
