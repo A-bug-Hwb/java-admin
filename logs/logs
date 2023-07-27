@@ -48,3 +48,24 @@
 2023-07-27 14:03:11.191 DEBUG 33704 --- [http-nio-7076-exec-7] com.wr.mapper.SysUserMapper.getUserList  : <==      Total: 2
 2023-07-27 17:00:44.948  INFO 33704 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2023-07-27 17:00:44.953  INFO 33704 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-07-27 17:00:51.974  INFO 14180 --- [main] com.wr.DemoApplication                   : Starting DemoApplication using Java 1.8.0_191 on LAPTOP-NOCK2TV1 with PID 14180 (F:\MyWork\wr-admin\wr-service\target\classes started by ROG in F:\MyWork\wr-admin\wr-service)
+2023-07-27 17:00:51.975 DEBUG 14180 --- [main] com.wr.DemoApplication                   : Running with Spring Boot v2.6.15, Spring v5.3.27
+2023-07-27 17:00:51.976  INFO 14180 --- [main] com.wr.DemoApplication                   : The following 1 profile is active: "dev"
+2023-07-27 17:00:52.873  INFO 14180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-27 17:00:52.876  INFO 14180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-27 17:00:52.912  INFO 14180 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2023-07-27 17:00:53.680  INFO 14180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7076 (http)
+2023-07-27 17:00:53.687  INFO 14180 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-27 17:00:53.687  INFO 14180 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-27 17:00:53.790  INFO 14180 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-27 17:00:53.790  INFO 14180 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1784 ms
+2023-07-27 17:00:53.970 DEBUG 14180 --- [main] com.wr.auth.JWTAuthorizationFilter       : Filter 'JWTAuthorizationFilter' configured for use
+2023-07-27 17:00:54.884  WARN 14180 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.wr.domain.SysUserRolePojo.SysUserRolePo".
+2023-07-27 17:00:54.884  WARN 14180 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.wr.domain.SysUserRolePojo.SysUserRolePo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-07-27 17:00:54.932  WARN 14180 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.wr.domain.SysRoleMenuPojo.SysRoleMenuPo".
+2023-07-27 17:00:54.932  WARN 14180 --- [main] c.b.m.core.injector.DefaultSqlInjector   : class com.wr.domain.SysRoleMenuPojo.SysRoleMenuPo ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-07-27 17:00:55.752  INFO 14180 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@681de87f, org.springframework.security.web.context.SecurityContextPersistenceFilter@440ef8d, org.springframework.security.web.header.HeaderWriterFilter@61a87366, org.springframework.web.filter.CorsFilter@1d02af26, org.springframework.security.web.authentication.logout.LogoutFilter@46612bfc, org.springframework.web.filter.CorsFilter@1d02af26, com.wr.auth.JWTAuthorizationFilter@66813e6e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8f2e3e6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45e140ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2eb1c615, org.springframework.security.web.session.SessionManagementFilter@7c0df4ab, org.springframework.security.web.access.ExceptionTranslationFilter@6afbe6a1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29bd85db]
+2023-07-27 17:00:56.283  INFO 14180 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7076 (http) with context path ''
+2023-07-27 17:00:56.576  INFO 14180 --- [main] com.wr.DemoApplication                   : Started DemoApplication in 4.9 seconds (JVM running for 5.584)
+2023-07-27 17:00:56.578  INFO 14180 --- [main] com.wr.DemoApplication                   : 启动成功
+2023-07-27 17:12:14.972  INFO 14180 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
