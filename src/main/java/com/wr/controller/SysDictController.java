@@ -13,6 +13,7 @@ import com.wr.service.ISysDictTypeService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,6 +31,7 @@ public class SysDictController extends BaseController {
 
 
     @ApiOperation("查询字典类型列表")
+    @PreAuthorize("@ac.hasPermi('system:dict:list')")
     @GetMapping("/getDictTypeList")
     public TableDataInfo getDictTypeList(SysDictTypeDto sysDictTypeDto){
         startPage();
@@ -43,6 +45,7 @@ public class SysDictController extends BaseController {
     }
 
     @ApiOperation("新增字典类型")
+    @PreAuthorize("@ac.hasPermi('system:dict:add')")
     @PostMapping("/addType")
     public AjaxResult addType(@RequestBody AddDictTypeDto addDictTypeDto){
         if (iSysDictTypeService.addType(addDictTypeDto)){
@@ -52,6 +55,7 @@ public class SysDictController extends BaseController {
     }
 
     @ApiOperation("修改字典类型")
+    @PreAuthorize("@ac.hasPermi('system:dict:edit')")
     @PutMapping("/updateType")
     public AjaxResult updateType(@RequestBody UpDictTypeDto upDictTypeDto){
         if (iSysDictTypeService.updateType(upDictTypeDto)){
@@ -61,6 +65,7 @@ public class SysDictController extends BaseController {
     }
 
     @ApiOperation("删除字典类型")
+    @PreAuthorize("@ac.hasPermi('system:dict:remove')")
     @DeleteMapping("/delType/{dictIds}")
     public AjaxResult delType(@PathVariable List<Long> dictIds){
         if (iSysDictTypeService.removeByIds(dictIds)){

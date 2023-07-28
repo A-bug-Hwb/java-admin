@@ -13,6 +13,7 @@ import com.wr.service.ISysUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,6 +34,7 @@ public class SysRoleController extends BaseController {
     private ISysUserRoleService iSysUserRoleService;
 
     @ApiOperation("获取角色列表")
+    @PreAuthorize("@ac.hasPermi('system:role:list')")
     @GetMapping("/list")
     public TableDataInfo list(SysRoleDto sysRoleDto){
         startPage();
@@ -49,6 +51,7 @@ public class SysRoleController extends BaseController {
      * 新增角色
      */
     @ApiOperation("新增角色")
+    @PreAuthorize("@ac.hasPermi('system:role:add')")
     @PostMapping("/add")
     public AjaxResult add(@Validated @RequestBody AddSysRoleDto addSysRoleDto)
     {
@@ -62,6 +65,7 @@ public class SysRoleController extends BaseController {
 
 
     @ApiOperation("修改角色信息")
+    @PreAuthorize("@ac.hasPermi('system:role:edit')")
     @PutMapping("/edit")
     public AjaxResult edit(@RequestBody UpSysRoleDto upSysRoleDto){
         SysRolePo sysRolePo = iSysRoleService.getById(upSysRoleDto.getRoleId());
@@ -84,6 +88,7 @@ public class SysRoleController extends BaseController {
 
 
     @ApiOperation("角色状态修改")
+    @PreAuthorize("@ac.hasPermi('system:role:edit')")
     @PutMapping("/changeStatus")
     public AjaxResult changeStatus(@RequestBody SysRoleUpStaDto role)
     {
@@ -102,6 +107,7 @@ public class SysRoleController extends BaseController {
      * 删除角色
      */
     @ApiOperation("删除角色")
+    @PreAuthorize("@ac.hasPermi('system:role:remove')")
     @DeleteMapping("/delete/{roleIds}")
     public AjaxResult delete(@PathVariable Long[] roleIds)
     {

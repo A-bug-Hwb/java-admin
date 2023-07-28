@@ -48,7 +48,6 @@ public class SysMenuController extends BaseController {
     }
 
     @ApiOperation("根据菜单id获取菜单详情")
-    @PreAuthorize("@ac.hasPermi('system:menu:edit')")
     @GetMapping("/{menuId}")
     public AjaxResult getInfo(@PathVariable Long menuId)
     {
@@ -67,7 +66,7 @@ public class SysMenuController extends BaseController {
     }
 
     @ApiOperation("菜单删除")
-    @PreAuthorize("@ac.hasPermi('system:menu:edit')")
+    @PreAuthorize("@ac.hasPermi('system:menu:remove')")
     @DeleteMapping("/delete/{menuId}")
     public AjaxResult delete(@PathVariable Long menuId)
     {

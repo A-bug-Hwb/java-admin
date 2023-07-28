@@ -16,6 +16,7 @@ import com.wr.service.ISysUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -57,6 +58,7 @@ public class SysUserController extends BaseController {
     }
 
     @GetMapping("/list")
+    @PreAuthorize("@ac.hasPermi('system:user:list')")
     @ApiOperation("获取用户列表")
     public TableDataInfo list(SysUserDto sysUserDto)
     {
@@ -71,6 +73,7 @@ public class SysUserController extends BaseController {
     }
 
     @PostMapping("/add")
+    @PreAuthorize("@ac.hasPermi('system:user:add')")
     @ApiOperation("新增用户")
     public AjaxResult add(@RequestBody AddSysUserDto addSysUserDto)
     {
@@ -84,6 +87,7 @@ public class SysUserController extends BaseController {
     }
 
     @PutMapping("/edit")
+    @PreAuthorize("@ac.hasPermi('system:user:edit')")
     @ApiOperation("修改用户信息")
     public AjaxResult edit(@RequestBody UpSysUserDto upSysUserDto)
     {
@@ -96,6 +100,7 @@ public class SysUserController extends BaseController {
     }
 
     @DeleteMapping("/delete/{userId}")
+    @PreAuthorize("@ac.hasPermi('system:user:remove')")
     @ApiOperation("删除用户")
     public AjaxResult delete(@PathVariable List<Long> userId)
     {
@@ -103,6 +108,7 @@ public class SysUserController extends BaseController {
     }
 
     @PutMapping("/resetPwd")
+    @PreAuthorize("@ac.hasPermi('system:user:edit')")
     @ApiOperation("用户密码重置")
     public AjaxResult resetPwd(@RequestBody UpPwdStuDto upPwdStuDto)
     {
@@ -113,6 +119,7 @@ public class SysUserController extends BaseController {
     }
 
     @PutMapping("/changeStatus")
+    @PreAuthorize("@ac.hasPermi('system:user:edit')")
     @ApiOperation("用户状态修改")
     public AjaxResult changeStatus(@RequestBody UpPwdStuDto upPwdStuDto)
     {

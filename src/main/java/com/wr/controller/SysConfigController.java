@@ -9,6 +9,7 @@ import com.wr.service.ISysConfigService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,6 +23,7 @@ public class SysConfigController extends BaseController {
     private ISysConfigService iSysConfigService;
 
     @ApiOperation("系统参数列表")
+    @PreAuthorize("@ac.hasPermi('system:config:list')")
     @GetMapping("/list")
     public TableDataInfo list(SysConfigDto sysConfigDto){
         startPage();
@@ -41,6 +43,7 @@ public class SysConfigController extends BaseController {
     }
 
     @ApiOperation("添加系统参数")
+    @PreAuthorize("@ac.hasPermi('system:config:add')")
     @PostMapping("/add")
     public AjaxResult add(@RequestBody AddSysConfigDto addSysConfigDto){
         if (iSysConfigService.install(addSysConfigDto)){
@@ -50,12 +53,14 @@ public class SysConfigController extends BaseController {
     }
 
     @ApiOperation("修改系统参数")
+    @PreAuthorize("@ac.hasPermi('system:config:edit')")
     @PutMapping("/update")
     public AjaxResult update(@RequestBody UpSysConfigDto upSysConfigDto){
         return success(iSysConfigService.updateInfo(upSysConfigDto));
     }
 
     @ApiOperation("删除系统参数")
+    @PreAuthorize("@ac.hasPermi('system:config:remove')")
     @DeleteMapping("/{configId}")
     public AjaxResult delete(@PathVariable List<Long> configId){
         return success(iSysConfigService.removeByIds(configId));
