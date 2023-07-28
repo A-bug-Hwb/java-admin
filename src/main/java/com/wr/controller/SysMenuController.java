@@ -2,7 +2,10 @@ package com.wr.controller;
 
 import com.wr.common.Result.AjaxResult;
 import com.wr.common.utils.BeanUtil;
-import com.wr.domain.SysMenuPojo.*;
+import com.wr.domain.SysMenuPojo.AddSysMenuDto;
+import com.wr.domain.SysMenuPojo.SysMenuDto;
+import com.wr.domain.SysMenuPojo.SysMenuVo;
+import com.wr.domain.SysMenuPojo.UpSysMenuDto;
 import com.wr.service.ISysMenuService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

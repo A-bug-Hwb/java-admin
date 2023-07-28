@@ -1,6 +1,5 @@
 package com.wr.domain.SysDictPojo.SysDictTypePojo;
 
-import com.wr.domain.BaseEntityPojo.BaseEntityDto;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

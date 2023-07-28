@@ -1,7 +1,5 @@
 package com.wr.domain.BaseEntityPojo;
 
-import com.baomidou.mybatisplus.annotation.FieldStrategy;
-import com.baomidou.mybatisplus.annotation.TableField;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;

@@ -1,8 +1,8 @@
 package com.wr.common.utils;
 
+import javax.servlet.http.HttpServletRequest;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * 获取IP方法

@@ -32,9 +32,9 @@ spring:
       slave:
         # 从数据源开关/默认关闭
         enabled: false
-        url: jdbc:mysql://localhost:3306/demo_assistant?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
-        username: root
-        password: root
+        url:
+        username:
+        password:
       # 初始连接数
       initialSize: 5
       # 最小连接池数量

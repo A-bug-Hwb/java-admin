@@ -3,7 +3,7 @@ wr-config:
   # 验证码类型 math 数组计算 char 字符验证
   captchaType: math
 server:
-  port: 7076
+  port: 7078
 spring:
   #Knife4j配置
   mvc:

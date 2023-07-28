@@ -1,9 +1,8 @@
 package com.wr.common.utils;
 
 import com.wr.common.constants.HttpStatus;
-import com.wr.domain.LogRegPojo.LoginUser;
 import com.wr.common.exception.ServiceException;
-import com.wr.domain.SysUserPojo.SysUserBo;
+import com.wr.domain.LogRegPojo.LoginUser;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

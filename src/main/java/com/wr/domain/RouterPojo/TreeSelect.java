@@ -1,11 +1,12 @@
 package com.wr.domain.RouterPojo;
 
-import java.io.Serializable;
-import java.util.List;
-import java.util.stream.Collectors;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.wr.domain.SysMenuPojo.SysMenuVo;
 import lombok.Data;
+
+import java.io.Serializable;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Treeselect树结构实体类

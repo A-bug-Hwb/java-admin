@@ -1,10 +1,6 @@
 package com.wr.auth.handle;
 
-import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import com.alibaba.fastjson2.JSON;
 import com.wr.common.Result.AjaxResult;
 import com.wr.common.service.TokenService;
 import com.wr.common.utils.ServletUtils;
@@ -14,7 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
-import com.alibaba.fastjson2.JSON;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * 自定义退出处理类 返回成功
